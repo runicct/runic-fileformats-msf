@@ -1,0 +1,11 @@
+*.bin
+*.dll
+*.nupkg
+*.pdb
+*.cache
+*.editorconfig
+**/bin/*
+**/obj/*
+.vs/*
+**/.vs/*
+packages/*

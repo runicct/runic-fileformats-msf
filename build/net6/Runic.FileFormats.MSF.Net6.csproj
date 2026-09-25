@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Runic.FileFormats.MSF</AssemblyName>
+    <RootNamespace>Runic.FileFormats.MSF</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\src\MSF.cs">
+      <Link>MSF.cs</Link>
+    </Compile>
+  </ItemGroup>
+</Project>
