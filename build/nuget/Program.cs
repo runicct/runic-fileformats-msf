@@ -72,7 +72,7 @@ using (var fileStream = new FileStream(nupkgPath, FileMode.Create, FileAccess.Re
         var entry = zip.CreateEntry(assemblyName + ".nuspec", CompressionLevel.Optimal);
         using (var stream = entry.Open())
         {
-            var bytes = System.Text.Encoding.UTF8.GetBytes(CreateNuspec(assemblyName, version, "This package is part of Runic Compiler Toolkit and provides a way helper to load dotnet assembly", "dotnet assembly loader helper"));
+            var bytes = System.Text.Encoding.UTF8.GetBytes(CreateNuspec(assemblyName, version, "This package is part of Runic Compiler Toolkit and provides a way to load and create MSF files (MSFs are the backbones of classic PDBs)", "pdb msf loader"));
             stream.Write(bytes, 0, bytes.Length);
         }
         entry = zip.CreateEntry("lib/net4.8/" + assemblyName + ".dll", CompressionLevel.Optimal);
